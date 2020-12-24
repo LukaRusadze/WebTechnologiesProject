@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/front.css">
+
+    <style>
+        .color {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="../backend/index.html" id="adminPanelBtn">Admin Panel</a>
+        <h1 class="title">Blog</h1>
+        
+
+
+        <div class="search">
+            <ul class="flex">
+                <a href="./index.html"><li class="list">Home</li></a>
+                <input type="search" id="searchInput" placeholder="Search" onkeyup="search(value)">
+            </ul>
+        </div>
+        <section class="posts"></section>
+    </div>
+    
+    <script src="../js/front.js"></script>
+</body>
+
+</html>

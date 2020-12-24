@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Editing a Post</title>
+    <link rel="stylesheet" href="../../backend/css/all.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Edit a Post</h1>
+        <nav class="navigation">
+            <a href="../dashboard.html" class="navigation--item">
+                <!-- დამატებული პოსტები -->
+                <i class="fas fa-home fa-3x"></i>
+            </a>
+            <a href="./index.html" class="navigation--item">
+                <!-- დამატებული პოსტები -->
+                <i class="fas fa-newspaper fa-3x"></i>
+            </a>
+            <a href="./create.html" class="navigation--item active">
+                <!-- პოსტის დამატება -->
+                <i class="fas fa-plus-circle fa-3x"></i>
+            </a>
+        </nav>
+    </div>
+
+
+    <div class="container">
+        <div class="form">
+            <form action="" class="form--create">
+                <div class="form-input">
+                    <label for="title">Title</label>
+                    <input type="text" placeholder="Title" id="title" name="title">
+                </div>
+
+                <div class="form-input">
+                    <label for="img_link">Image Link</label>
+                    <input type="text" placeholder="Image Link" id="img_link" name="img_link">
+                </div>
+
+                <div class="form-input">
+                    <label for="short_desc">Short Description</label>
+                    <textarea name="short_desc" id="short_desc" cols="30" rows="1" maxlength="50"></textarea>
+                </div>
+
+                <div class="form-input">
+                    <label for="desc">Description</label>
+                    <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-input">
+                    <button type="button" id="createBtn">Save</button>
+                </div>
+        </div>
+    </div>
+    <script src="../js/edit.js"></script>
+</body>
+
+</html>

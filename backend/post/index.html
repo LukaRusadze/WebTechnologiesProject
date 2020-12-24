@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posts</title>
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Posts</h1>
+        <nav class="navigation">
+                <a href="../dashboard.html" class="navigation--item">
+                   
+                    <i class="fas fa-home fa-3x"></i>
+                </a>
+                <a href="../post/index.html" class="navigation--item active">
+                    
+                    <i class="fas fa-newspaper fa-3x"></i>
+                </a>
+                <a href="./create.html" class="navigation--item">
+                    
+                    <i class="fas fa-plus-circle fa-3x"></i>
+                </a>
+            </nav>
+    </div>
+    <div class="container--full">
+        <table class="posts">
+            <thead class="post--header">
+                <tr>
+                    <th>Title</th>
+                    <th>Picture</th>
+                    <th>Short Description</th>
+                    <th>Remove</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody id="posts"></tbody>
+        </table>
+    </div>
+    <script src="../js/posts.js"></script>
+</body>
+
+</html>
